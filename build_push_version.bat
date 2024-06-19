@@ -16,7 +16,7 @@ echo New image ID: !IMAGE_ID!
 endlocal
 
 echo Tagging the image...
-docker tag path-pilot-service:%SERVICE_VERSION% floredenis2001/path-pilot-proxy:%SERVICE_VERSION%
+docker tag path-pilot-proxy:%SERVICE_VERSION% floredenis2001/path-pilot-proxy:%SERVICE_VERSION%
 
 echo Pushing the tagged image...
 docker push floredenis2001/path-pilot-proxy:%SERVICE_VERSION%
